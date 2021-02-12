@@ -8,6 +8,8 @@ body {
     font-family: arial, sans-serif;
 }
 
+/*------ NAVBAR ------*/
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -58,4 +60,40 @@ nav a:hover {
 .image-list:hover {
     background: rgba(129, 126, 126, 0.1);
     border-radius: 50%;
+}
+
+/*------ NAME SECTION ------*/
+.gretting {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+}
+
+.gretting h2 {
+    color: #5d5d5d;
+}
+
+ .gretting h1 span {
+     letter-spacing: -11px;
+     font-size: 6rem;
+     font-family: Futura;
+     font-weight: 300;
+    
+ }
+
+.blue-letter {
+    color: #4285f3;
+}
+
+.red-letter {
+    color: #ea4435;
+}
+
+.yellow-letter {
+    color: #fbbd04;
+}
+
+.green-letter {
+    color: #33a852;
 }
