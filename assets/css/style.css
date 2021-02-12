@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: rgba(0,0,0,0.87);
+}
+
+.app-image {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+
+}
+.profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.image-list {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-list:hover {
+    background: rgba(129, 126, 126, 0.1);
+    border-radius: 50%;
+}
