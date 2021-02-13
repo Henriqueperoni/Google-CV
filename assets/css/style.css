@@ -50,14 +50,18 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.image-list {
+.image-list,
+.footer-container li {
+    list-style: none;
     width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.image-list:hover {
+.image-list:hover,
+.footer-container li:hover {
     background: rgba(129, 126, 126, 0.1);
     border-radius: 50%;
 }
@@ -72,6 +76,7 @@ nav a:hover {
 
 .gretting h2 {
     color: #5d5d5d;
+    padding-left: 7px;
 }
 
  .gretting h1 span {
@@ -132,4 +137,39 @@ footer {
     background: #f2f2f2;
     height: 45px;
     width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+}
+
+.footer-container p {
+    color: #767676;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.footer-container ul {
+    display: flex;
+}
+
+.footer-container li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-container a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #3c4043;
+    margin: 5px;
 }
