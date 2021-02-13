@@ -177,11 +177,16 @@ footer {
 /*------------ PORTFOLIO PAGE ------------*/
 /*------ NAVBAR ------*/
 
+header {
+    margin-top: 10px;
+}
+
 nav > a {
      letter-spacing: -2px;
      font-family: Futura;
      position: absolute;
      left: 30px;
+     text-decoration: none !important;
 }
 
 .fake-input {
@@ -230,8 +235,13 @@ nav > a {
 }
 
 .ruler {
-    margin-top: 80px;
+    margin-bottom: -5px;
     border-bottom: 0.1em solid #eff0f1;
+}
+
+.ruler img {
+    padding-left: 160px;
+    margin-bottom: -5px;
 }
 
 /*------ PORTFOLIO LINKS ------*/
