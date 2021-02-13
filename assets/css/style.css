@@ -12,7 +12,7 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -177,8 +177,8 @@ footer {
 /*------------ PORTFOLIO PAGE ------------*/
 /*------ NAVBAR ------*/
 
-nav h3 {
-     letter-spacing: -3px;
+nav > a {
+     letter-spacing: -2px;
      font-family: Futura;
      position: absolute;
      left: 30px;
@@ -188,7 +188,8 @@ nav h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 170px;
+    position: absolute;
+    left: 170px;
     width: 700px;
     height: 45px;
     border: 1px solid #e1e4e7;
@@ -226,4 +227,45 @@ nav h3 {
 .bar {
     width: 1px !important;
     height: 22px;
+}
+
+.ruler {
+    margin-top: 80px;
+    border-bottom: 0.1em solid #eff0f1;
+}
+
+/*------ PORTFOLIO LINKS ------*/
+.search-results {
+    padding-left: 180px;
+}
+
+.search-results > p {
+    font-size: 14px;
+    color: #70757a;
+    padding: 18px 0;
+}
+
+.results {
+    margin-bottom: 20px;
+}
+
+.results h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #202225;
+    padding: 8px 0;
+}
+
+.results h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0;
+}
+
+.results p {
+    color: #70757a;
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 560px;
+    padding-top: 5px;
 }
