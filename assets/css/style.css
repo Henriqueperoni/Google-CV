@@ -111,6 +111,8 @@ nav a:hover {
 }
 
 .container-buttons a {
+    display: flex;
+    justify-content: center;
     font-family: arial,sans-serif;
     font-size: 14px;
     background-color: #f8f9fa;
