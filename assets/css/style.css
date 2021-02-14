@@ -336,3 +336,25 @@ nav > a {
 .results-main p strong {
     color: #202124;
 }
+
+/*------ MODAL ------*/
+.modal-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: none;
+}
+
+.modal-icons {
+    width: 200px;
+    height: 300px;
+    background: red;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.modal-container.show-modal {
+    display: flex;
+}
