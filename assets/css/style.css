@@ -346,15 +346,45 @@ nav > a {
     display: none;
 }
 
-.modal-icons {
-    width: 200px;
-    height: 300px;
-    background: red;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
 .modal-container.show-modal {
     display: flex;
 }
+
+.modal-icons {
+    width: 305px;
+    height: 300px;
+    border: 1px solid black;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-icons div {
+    width: 85px;
+    height: 85px;
+    margin: 8px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-icons div:hover {
+    background: #E8F0FE;
+    border-radius: 10px;
+}
+
+.modal-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.modal-icons p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #202124;
+    margin: 0 auto;
+}
+
