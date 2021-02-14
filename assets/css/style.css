@@ -288,7 +288,8 @@ nav > a {
 }
 .results-box {
     width: 491px;
-    margin-left: 30px;
+    height: fit-content;
+    margin-left: 80px;
     border: 0.1em solid #eff0f1;
     border-radius: 7px;
 }
@@ -316,11 +317,20 @@ nav > a {
     font-size: 14px;
     font-weight: normal;
     color: #70757a;
-
 }
 
-
-
 .results-main {
+    padding: 16px;
+}
 
+.results-main p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #4d5156;
+    padding-bottom: 10px;
+    line-height: 18px;
+}
+
+.results-main p strong {
+    color: #202124;
 }
