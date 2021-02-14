@@ -300,6 +300,8 @@ nav > a {
 
 .results-images img{
     border-radius: 7px;
+    max-width: 208px;
+    object-fit: cover;
 }
 
 .results-intro  {
