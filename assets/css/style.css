@@ -485,13 +485,37 @@ header {
 
 /*------ MEDIA QUERIES ------*/
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
     .display-none-m {
         display: none;
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1320px) {
+    .search-results {
+        padding-left: 6%;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .display-none-lg {
+        display: none;
+    }
+
+    .search-results {
+        padding-left: 2%;
+    }
+
+    .results-box {
+        width: 403px;
+        margin-left: 5%
+    }
+
+}
+
+@media screen and (max-width: 992px) {
     .display-none-s {
         display: none;
     }
@@ -563,7 +587,8 @@ header {
     }
 
     .results-intro {
-        border-bottom: 5px solid #f0f3f4;   
+        border-bottom: 5px solid #f0f3f4;
+        width: 100vw;  
     }
 
     .input-icons {
