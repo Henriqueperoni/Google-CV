@@ -8,11 +8,6 @@ body {
     font-family: arial, sans-serif;
 }
 
-section {
-    position: absolute;
-    min-height: 100vh;
-}
-
 /*------ NAVBAR ------*/
 
 .container-navbar {
@@ -84,8 +79,8 @@ section {
 .gretting {
     position: absolute;
     left: 50%;
-    top: 30%;
-    transform: translate(-50%, -30%);
+    top: 40%;
+    transform: translate(-50%, -40%);
 }
 
 .gretting h1 {
@@ -264,7 +259,6 @@ header {
 }
 
 /* Navbar small screens */
-
 .navbar {
     position: absolute;
     top: 0;
@@ -272,6 +266,15 @@ header {
     height: 100vh;
     width: 280px;
     background: #fff;
+}
+
+.slider {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.40);
+    position: absolute;
+    top: 0;
+    left: 0;
     transform: translateX(-100%);
     z-index: 20;
     transition: transform 0.5s ease-in;
@@ -497,6 +500,7 @@ header {
         display: block;
         position: absolute;
         left: 5px;
+        z-index: 9;
     }
 
     .burguer div {

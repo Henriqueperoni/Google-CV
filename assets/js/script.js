@@ -18,15 +18,14 @@ appIcon.addEventListener("click", () => startModal())
 // Navbar slider
 const navSlide = () => {
     const burguer = document.querySelector(".burguer");
-    const nav = document.querySelector(".navbar");
-    const navClose = document.querySelector(".container-greeting");
+    const slider = document.querySelector(".slider");
 
     burguer.addEventListener("click", () => {
-        nav.classList.toggle("nav-active")
+        slider.classList.toggle("nav-active")
     })
 
-    navClose.addEventListener("click", () => {
-        nav.classList.toggle("nav-active")
+    slider.addEventListener("click", () => {
+        slider.classList.toggle("nav-active")
     })
 
 }
