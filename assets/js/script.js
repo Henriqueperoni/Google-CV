@@ -15,6 +15,14 @@ function startModal() {
 const appIcon = document.querySelector(".app-image")
 appIcon.addEventListener("click", () => startModal()) 
 
+// Navbar slider
+const navSlide = () => {
+    const burguer = document.querySelector(".burguer");
+    const nav = document.querySelector(".navbar");
+
+}
+
+navSlide()
 
 
 

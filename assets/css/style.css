@@ -254,6 +254,24 @@ nav > a {
     margin-bottom: -5px;
 }
 
+/* Navbar small screens */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    background: black;
+    transform: translateX(-100%);
+    z-index: 20;
+    transition: transform 0.5s ease-in;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}    
+
 /*------ PORTFOLIO RESULTS ------*/
 .container-results {
     display: flex;
