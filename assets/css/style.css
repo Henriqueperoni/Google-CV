@@ -77,6 +77,11 @@ nav a:hover {
     transform: translate(-50%, -40%);
 }
 
+.gretting h1 {
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .gretting h2 {
     color: #5d5d5d;
     padding-left: 7px;
@@ -122,7 +127,7 @@ nav a:hover {
     padding: 10px 15px;
     border: 1px solid #f8f9fa;
     border-radius: 5px;
-    min-width: 90px;
+    min-width: 95px;
     outline: none;
     text-decoration: none;
     cursor: pointer;
@@ -399,4 +404,33 @@ nav > a {
 .move-modal {
     margin: 10px 10px 0 0;
 }
+
+
+/*------ MEDIA QUERIES ------*/
+
+@media screen and (max-width: 576px) {
+    .display-none-s {
+        display: none;
+    }
+
+    nav ul {
+        margin: 5px 0;
+    }
+    .gretting h1 span {
+        letter-spacing: -9px;
+        font-size: 3.5rem;
+    }
+
+    .gretting h2 {
+        padding-left: 14px;
+        font-size: 20px;
+    }
+
+
+
+
+}
+
+
+
 
