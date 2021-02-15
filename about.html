@@ -7,7 +7,7 @@
     <meta name="description" content="A website to show my coding abilities and creativity">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"  integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" type="text/css" />
     <title>Google CV</title>
 </head>
@@ -43,6 +43,11 @@
         </nav>
 
         <nav class="display-none-m">
+            <div class="burguer">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <a href="index.html">
                 <h3>
                     <span class="blue-letter">H</span>
@@ -56,11 +61,11 @@
                 </h3>
             </a>
             <ul>
-                <li class="image-list"><a><img class="app-image" src="assets/media/apps.png" alt="Apps icon"></a></li>
+                <li class="image-list display-none-s"><a><img class="app-image" src="assets/media/apps.png" alt="Apps icon"></a></li>
                 <li class="image-list"><a><img class="profile-image" src="assets/media/profile.png" alt="Profile picture"></a></li>
             </ul>
 
-            <!-- <div class="fake-input">
+            <div class="fake-input display-none-s">
                 <p>About me</p>
                 <div class="input-icons">
                     <img src="assets/media/clear.png" alt="Clear icon">
@@ -68,19 +73,41 @@
                     <img src="assets/media/microphone.png" alt="Microphone icon">
                     <img src="assets/media/magnifying.glass.png" alt="Magnifying glass icon">
                 </div>
-            </div> -->
+            </div>
         </nav>
 
+        <div class="fake-input display-none-m">
+            <p>About me</p>
+            <div class="input-icons">
+                <img src="assets/media/clear.png" alt="Clear icon">
+                <img class="bar" src="assets/media/bar.png" alt="Bar icon">
+                <img src="assets/media/microphone.png" alt="Microphone icon">
+                <img src="assets/media/magnifying.glass.png" alt="Magnifying glass icon">
+            </div>
+        </div>
+
         <div class="ruler">
-            <img src="assets/media/results-option.png" alt="">
+            <img class="display-none-s" src="assets/media/results-option.png" alt="">
+            <div class="search-items display-none-m">
+                <p>All</p>
+                <p>Shopping</p>
+                <p>Maps</p>
+                <p>Images</p>
+                <p>Videos</p>
+                <p>News</p>
+            </div>
         </div>
     </header>
 
     <section class="search-results">
-        <p>About 5 result (0.21 seconds)</p>
+        <p class="display-none-s">About 5 result (0.21 seconds)</p>
 
         <div class="container-results">
             <div>
+                <div class="results-intro display-none-m">
+                        <h2>Henrique Peroni</h2>
+                        <h4>Future Software Developer Apprentice at Google</h4>
+                    </div>
                 <div class="results-list">
                     <div>
                         <h4>wit-fitness.com/blogs/news/hwpo</h4>
@@ -131,7 +158,7 @@
                 </div>
             </div>
 
-            <div class="results-box">
+            <div class="results-box display-none-s">
                 <div class="results-header">
                     <div class="results-images">
                         <img src="assets/media/hard-work.png" alt="Image with the saying 'Hard work pays off'">    
@@ -142,8 +169,7 @@
                         <h2>Henrique Peroni</h2>
                         <h4>Future Software Developer Apprentice at Google</h4>
                     </div>
-                </div>
-                <div class="results-main">
+                    <div class="results-main">
                     <p>It's always hard to define yourself, especially when you are always trying to improve. I mean, today I'm not the same
                         person I was yesterday, and hopefully tomorrow I'll be a better version of me. Since I started my journey as a
                         Software Developer I saw that there is always new to learn, and the more I learn, the more I realized that there is
@@ -154,6 +180,7 @@
                     <p><strong>Hobbies</strong>: Reading, Crossfit, Traveling</p>
                     <p><strong>Characteristics</strong>: Persist, resilient</p>
                     <p><strong>Languagues</strong>: English and Portuguese</p>
+                </div>
                 </div>
             </div>
         </div>

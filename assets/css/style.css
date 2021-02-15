@@ -8,6 +8,8 @@ body {
     font-family: arial, sans-serif;
 }
 
+
+
 /*------ NAVBAR ------*/
 
 nav {
@@ -259,7 +261,6 @@ nav > a {
 
 .search-results {
     padding-left: 180px;
-    margin-bottom: 60px;
 }
 
 .search-results > p {
@@ -408,9 +409,31 @@ nav > a {
 
 /*------ MEDIA QUERIES ------*/
 
+@media screen and (min-width: 576px) {
+    .display-none-m {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .display-none-s {
         display: none;
+    }
+
+    .burguer {
+        display: block;
+        padding-left: 5px;
+    }
+
+    .burguer div {
+        width: 17px;
+        height: 2px;
+        background-color: #707579;
+        margin: 3px;
+    }
+
+    nav {
+        justify-content: space-between;
     }
 
     nav ul {
@@ -426,6 +449,47 @@ nav > a {
         font-size: 20px;
     }
 
+    nav > a {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .fake-input {
+        position: unset;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .search-results {
+        padding: 0;
+    }
+
+    .results-list {
+        padding: 0 8px;
+    }
+
+    .search-items {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: #757575;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .search-items :first-child {
+        color: #000;
+        font-weight: 500;
+        border-bottom: 2px solid #000;
+    }
+
+    .ruler {
+        border-bottom: 5px solid #f0f3f4;
+    }
+
+    .results-intro {
+        border-bottom: 5px solid #f0f3f4;   
+    }
 
 
 
