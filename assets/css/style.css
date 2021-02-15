@@ -70,11 +70,11 @@ body {
 }
 
 /*------ NAME SECTION ------*/
-.container-greeting {
+/* .container-greeting {
     position: relative;
     width: 100vw;
     height: 100vh;
-}
+} */
 
 .gretting {
     position: absolute;
@@ -532,6 +532,7 @@ header {
         position: unset;
         width: 95%;
         margin: 0 auto;
+        margin-bottom: 15px;
     }
 
     .search-results {
