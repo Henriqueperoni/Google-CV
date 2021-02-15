@@ -8,29 +8,32 @@ body {
     font-family: arial, sans-serif;
 }
 
-
+section {
+    position: absolute;
+    min-height: 100vh;
+}
 
 /*------ NAVBAR ------*/
 
-nav {
+.container-navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-nav ul {
+.container-navbar ul {
     display: flex;
     margin: 10px;
 }
 
-nav li {
+.container-navbar li {
     list-style: none;
     margin: 8px;
     display: flex;
     align-items: center;
 }
 
-nav a {
+.container-navbar a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
@@ -49,7 +52,7 @@ nav a {
     border-radius: 50%;
 }
 
-nav a:hover {
+.container-navbar a:hover {
     text-decoration: underline;
 }
 
@@ -72,11 +75,17 @@ nav a:hover {
 }
 
 /*------ NAME SECTION ------*/
+.container-greeting {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
 .gretting {
     position: absolute;
     left: 50%;
-    top: 40%;
-    transform: translate(-50%, -40%);
+    top: 30%;
+    transform: translate(-50%, -30%);
 }
 
 .gretting h1 {
@@ -191,7 +200,7 @@ header {
     margin-top: 10px;
 }
 
-nav > a {
+.container-navbar > a {
      letter-spacing: -2px;
      font-family: Futura;
      position: absolute;
@@ -261,8 +270,8 @@ nav > a {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 300px;
-    background: black;
+    width: 280px;
+    background: #fff;
     transform: translateX(-100%);
     z-index: 20;
     transition: transform 0.5s ease-in;
@@ -270,7 +279,53 @@ nav > a {
 
 .nav-active {
     transform: translateX(0%);
-}    
+}
+
+.navbar h3 {
+    letter-spacing: -2px;
+    font-size: 1.3rem;
+}
+
+.navbar button {
+    color: #fff;
+    background: #1d72e7;
+    height: 36px;
+    width: 210px;
+    border: none;
+    border-radius: 24px;
+    position: relative;
+}
+
+.google-icon {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    background: #fff;
+    border-radius: 50%;
+    left: 5px;
+    top: 50%;
+    transform: translatey(-50%);
+    position: absolute;
+}
+
+.navbar li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #757575;
+    padding: 12px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.navbar i {
+    font-size: 16px;
+    padding-right: 17px;
+}
+
+
 
 /*------ PORTFOLIO RESULTS ------*/
 .container-results {
@@ -451,7 +506,7 @@ nav > a {
         margin: 3px;
     }
 
-    nav ul {
+    .container-navbar ul {
         margin: 5px 0;
     }
     .gretting h1 span {
@@ -464,7 +519,7 @@ nav > a {
         font-size: 20px;
     }
 
-    nav > a {
+    .container-navbar > a {
         left: 50%;
         transform: translateX(-50%);
     }
