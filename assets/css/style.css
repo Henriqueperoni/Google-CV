@@ -679,11 +679,12 @@ header {
     }
 
     .direct-links {
-        display: flex !important;
+        display: flex;
+        padding: 15px 0 0 60px;
     }
 
     .direct-links p {
-        max-width: 100px;
+        max-width: 150px;
     }
 
     .search-items {
