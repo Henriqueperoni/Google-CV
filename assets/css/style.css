@@ -8,6 +8,10 @@ body {
     font-family: arial, sans-serif;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 /*------ NAVBAR ------*/
 
 .container-navbar {
@@ -480,6 +484,13 @@ header {
 }
 
 /*------ IMAGES PAGE ------*/
+.padding-bottom {
+    padding-bottom: 0 !important;
+}
+
+.padding-bottom p {
+    font-size: 12px;
+}
 .container-images {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -495,6 +506,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 5px;
+    cursor: pointer;
 }
 
 .container-images img {
@@ -530,6 +542,21 @@ header {
 
 .modal-content img {
     width: 100%;
+}
+
+.modal span {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b7b7b7;
+    cursor: pointer;
 }
 
 
@@ -750,10 +777,17 @@ header {
         padding: 5px;
     }
 
-    .search-items :first-child {
+    .selected {
         color: #000;
         font-weight: 500;
         border-bottom: 2px solid #000;
+    }
+
+    .selected-blue {
+        border-bottom: 2px solid #4285f4;
+        color: #4285f4;
+        height: 30px;
+        width: max-content;
     }
 
     .ruler {
