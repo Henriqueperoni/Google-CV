@@ -329,7 +329,19 @@ header {
     padding-right: 17px;
 }
 
+.ul-images {
+    position: absolute;
+    left: 50px;
+    
+}
 
+.ul-images li, 
+#anchor-image {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #70757a;
+}
 
 /*------ PORTFOLIO RESULTS ------*/
 .container-results {
@@ -488,9 +500,8 @@ header {
     padding-bottom: 0 !important;
 }
 
-.padding-bottom p {
-    font-size: 12px;
-}
+
+
 .container-images {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -683,7 +694,7 @@ header {
 
 @media screen and (min-width: 992px) {
     .display-none-m {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -713,7 +724,7 @@ header {
 
 @media screen and (max-width: 992px) {
     .display-none-s {
-        display: none;
+        display: none !important;
     }
 
     .burguer {
@@ -721,6 +732,7 @@ header {
         position: absolute;
         left: 15px;
         z-index: 9;
+        cursor: pointer;
     }
 
     .burguer div {
@@ -770,11 +782,13 @@ header {
 
     .search-items {
         font-family: 'Roboto', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
+        font-weight: 500;
         color: #757575;
         display: flex;
         justify-content: space-between;
         padding: 5px;
+        cursor: pointer;
     }
 
     .selected {
@@ -785,7 +799,7 @@ header {
 
     .selected-blue {
         border-bottom: 2px solid #4285f4;
-        color: #4285f4;
+        color: #4285f4 !important;
         height: 30px;
         width: max-content;
     }
