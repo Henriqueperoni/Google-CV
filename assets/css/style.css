@@ -485,7 +485,8 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     justify-items: center;
     grid-gap: 5px;
-    grid-row-gap: 10px;
+    grid-row-gap: 5px;
+    margin: 15px 5px;
 }
 
 .images-wrapper {
@@ -493,7 +494,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 5px;
 }
 
 .container-images img {
@@ -522,10 +523,14 @@ header {
 	position: relative;
 	padding: 0;
 	outline: 0;
-	max-width: 600px
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
 }
 
-
+.modal-content img {
+    width: 100%;
+}
 
 
 @keyframes spin {
@@ -762,6 +767,18 @@ header {
 
     .input-icons {
         padding-right: 15px;
+    }
+
+    .container-images {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    
+    }
+
+    .container-images img {
+        padding: 5px;
+    }
+    .modal-content img {
+        width: 96%;
     }
 
 
