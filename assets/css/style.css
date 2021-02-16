@@ -480,6 +480,26 @@ header {
 }
 
 /*------ IMAGES PAGE ------*/
+.container-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images-wrapper {
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 190px;
+    margin: 10px;
+}
+
+.container-images img {
+    max-width: 240px;
+    max-height: 170px;
+    object-fit: cover;
+}
 
 .modal {
 	z-index: 3;
@@ -497,11 +517,10 @@ header {
 
 .modal-content {
 	margin: auto;
-	background-color: #fff;
 	position: relative;
 	padding: 0;
 	outline: 0;
-	width: 600px
+	max-width: 600px
 }
 
 
