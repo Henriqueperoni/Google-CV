@@ -673,6 +673,19 @@ header {
         padding: 0 8px;
     }
 
+    .dot {
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .direct-links {
+        display: flex !important;
+    }
+
+    .direct-links p {
+        max-width: 100px;
+    }
+
     .search-items {
         font-family: 'Roboto', sans-serif;
         font-size: 12px;
