@@ -481,8 +481,11 @@ header {
 
 /*------ IMAGES PAGE ------*/
 .container-images {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    justify-items: center;
+    grid-gap: 5px;
+    grid-row-gap: 10px;
 }
 
 .images-wrapper {
@@ -490,15 +493,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 290px;
-    height: 190px;
     margin: 10px;
 }
 
 .container-images img {
-    max-width: 240px;
-    max-height: 170px;
+    width: 90%;
+    max-height: 220px;
     object-fit: cover;
+    padding: 10px;
 }
 
 .modal {
