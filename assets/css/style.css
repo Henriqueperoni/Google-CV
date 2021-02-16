@@ -500,8 +500,6 @@ header {
     padding-bottom: 0 !important;
 }
 
-
-
 .container-images {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -527,6 +525,7 @@ header {
     padding: 10px;
 }
 
+/* Credit - https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_gallery */
 .modal {
 	z-index: 3;
 	display: none;
@@ -571,108 +570,6 @@ header {
 }
 
 
-@keyframes spin {
-	0% {
-		transform: rotate(0deg)
-	}
-	100% {
-		transform: rotate(359deg)
-	}
-}
-
-.animate-fading {
-	animation: fading 10s infinite
-}
-
-@keyframes fading {
-	0% {
-		opacity: 0
-	}
-	50% {
-		opacity: 1
-	}
-	100% {
-		opacity: 0
-	}
-}
-
-.animate-opacity {
-	animation: opac 0.8s
-}
-
-@keyframes opac {
-	from {
-		opacity: 0
-	}
-	to {
-		opacity: 1
-	}
-}
-
-.animate-top {
-	position: relative;
-	animation: animatetop 0.4s
-}
-
-@keyframes animatetop {
-	from {
-		top: -300px;
-		opacity: 0
-	}
-	to {
-		top: 0;
-		opacity: 1
-	}
-}
-
-.animate-left {
-	position: relative;
-	animation: animateleft 0.4s
-}
-
-@keyframes animateleft {
-	from {
-		left: -300px;
-		opacity: 0
-	}
-	to {
-		left: 0;
-		opacity: 1
-	}
-}
-
-.animate-right {
-	position: relative;
-	animation: animateright 0.4s
-}
-
-@keyframes animateright {
-	from {
-		right: -300px;
-		opacity: 0
-	}
-	to {
-		right: 0;
-		opacity: 1
-	}
-}
-
-.animate-bottom {
-	position: relative;
-	animation: animatebottom 0.4s
-}
-
-@keyframes animatebottom {
-	from {
-		bottom: -300px;
-		opacity: 0
-	}
-	to {
-		bottom: 0;
-		opacity: 1
-	}
-}
-
 .animate-zoom {
 	animation: animatezoom 0.6s
 }
@@ -684,10 +581,6 @@ header {
 	to {
 		transform: scale(1)
 	}
-}
-
-.animate-input {
-	transition: width 0.4s ease-in-out
 }
 
 /*------ MEDIA QUERIES ------*/

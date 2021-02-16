@@ -31,7 +31,7 @@ const navSlide = () => {
 }
 
 navSlide()
-
+// Credit - https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal_gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
