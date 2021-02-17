@@ -362,6 +362,19 @@ header {
     margin-bottom: 20px;
 }
 
+.direct-links {
+    display: flex;
+    padding: 15px 0 0 20px;
+}
+
+.direct-links p {
+    max-width: 210px !important;
+}
+
+.direct-links > div {
+    padding-right: 40px;
+}
+
 .results-list h4 {
     font-size: 14px;
     font-weight: 400;
@@ -676,15 +689,6 @@ header {
     .dot {
         padding: 5px;
         font-weight: bold;
-    }
-
-    .direct-links {
-        display: flex;
-        padding: 15px 0 0 60px;
-    }
-
-    .direct-links p {
-        max-width: 150px;
     }
 
     .search-items {
