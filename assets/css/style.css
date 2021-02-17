@@ -74,12 +74,6 @@ body {
 }
 
 /*------ NAME SECTION ------*/
-/* .container-greeting {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-} */
-
 .gretting {
     position: absolute;
     left: 50%;
@@ -100,7 +94,7 @@ body {
 .gretting h1 span {
      letter-spacing: -11px;
      font-size: 6rem;
-     font-family: Futura;
+     font-family: Futura, Arial, Helvetica, sans-serif;
      font-weight: 300;
 }
 
@@ -192,7 +186,7 @@ footer {
     margin: 5px;
 }
 
-/*------------ PORTFOLIO PAGE ------------*/
+/*------------ PORTFOLIO/ABOUT PAGE ------------*/
 /*------ NAVBAR ------*/
 
 header {
@@ -201,7 +195,7 @@ header {
 
 .container-navbar > a {
      letter-spacing: -2px;
-     font-family: Futura;
+     font-family: Futura, Arial, Helvetica, sans-serif;
      position: absolute;
      left: 30px;
      text-decoration: none !important;
@@ -341,9 +335,10 @@ header {
     font-size: 12px;
     font-weight: 500;
     color: #70757a;
+    cursor: pointer;
 }
 
-/*------ PORTFOLIO RESULTS ------*/
+/*------ RESULTS ------*/
 .container-results {
     display: flex;
 }
